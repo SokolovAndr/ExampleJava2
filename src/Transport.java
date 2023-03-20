@@ -1,6 +1,6 @@
-public class Transport {
+public abstract class Transport {
     //модификаторы доступа: public, protected, private
-    private float speed;
+    protected float speed;
     private int weight;
     private String color;
     private byte[] coordinate;
@@ -19,6 +19,10 @@ public class Transport {
         this.coordinate = coordinate;
         //System.out.println(getValues());
     }
+
+    public abstract void moveObject(float speed);
+    public abstract boolean stopObject();
+
     protected void setValues(float speed, int weight, String color, byte[] coordinate){
         this.speed = speed;
         this.weight = weight;
