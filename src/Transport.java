@@ -5,18 +5,18 @@ public class Transport {
     private String color;
     private byte[] coordinate;
 
-    public Transport(){
+   /* public Transport(){
         System.out.println("Object created");
-    }
+    }*/
     public Transport(float _speed, int _weight, String _color, byte[] _coordinate){
         System.out.println("Object created");
         setValues(_speed,_weight,_color,_coordinate);
         System.out.println(getValues());
     }
-    public Transport(int _weight, byte[] _coordinate){
+    public Transport(int weight, byte[] coordinate){
         System.out.println("Object created");
-        weight = _weight;
-        coordinate = _coordinate;
+        this.weight = weight;
+        this.coordinate = coordinate;
         System.out.println(getValues());
     }
     public void setValues(float _speed, int _weight, String _color, byte[] _coordinate){
