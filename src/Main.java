@@ -14,7 +14,7 @@ public class Main {
 //        truck.speed = 130.5f;
 //        truck.weight = 5400;
 //        truck.color = "grey";
-//        truck.coordinate = new byte[] {50,60,60};
+//        truck.coordinate = new byte[] {60,60,60};
 //        String res2 = truck.getValues();
 //        System.out.println(res2);
 
