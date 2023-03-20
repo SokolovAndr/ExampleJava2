@@ -1,6 +1,7 @@
 public class Truck extends Transport {
 
     private boolean isLoaded;
+    public Engine engine = new Engine(); //влож класс
 
     public Truck(int weight, byte[] coordinate){
         super(weight, coordinate); //ключевое слово super позваоляет обратиться к родительскому классу

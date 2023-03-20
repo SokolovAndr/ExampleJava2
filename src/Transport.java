@@ -5,6 +5,7 @@ public abstract class Transport {
     private String color;
     private byte[] coordinate;
 
+
    /* public Transport(){
         System.out.println("Object created");
     }*/
@@ -37,5 +38,26 @@ public abstract class Transport {
             infoCoordinates += coordinate[i] + " ";
 
         return info + infoCoordinates;
+    }
+
+    class Engine {      //создали вложенный класс
+        private boolean isReady;
+        private int km;
+
+        public void setValues(boolean isReady, int km) {
+            this.isReady = isReady;
+            this.km = km;
+        }
+
+        public void isReady(boolean isReady){
+            this.isReady = isReady;
+        }
+
+        public void info() {
+            if(isReady)
+                System.out.println("Двигатель исправен");
+            else
+                System.out.println("Нет, он не работает. Он проехал " + km + " км");
+        }
     }
 }
