@@ -6,9 +6,8 @@ public abstract class Transport {
     private byte[] coordinate;
 
 
-   /* public Transport(){
-        System.out.println("Object created");
-    }*/
+   public Transport(){}
+
     public Transport(float _speed, int _weight, String _color, byte[] _coordinate){
         System.out.println("Object created");
         setValues(_speed,_weight,_color,_coordinate);
